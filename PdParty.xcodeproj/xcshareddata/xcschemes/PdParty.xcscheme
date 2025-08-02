@@ -37,6 +37,16 @@
          </BuildableReference>
       </MacroExpansion>
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "734DF38FBCF64855A26C7C25"
+               BuildableName = "PdPartyUITests.xctest"
+               BlueprintName = "PdPartyUITests"
+               ReferencedContainer = "container:PdParty.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
