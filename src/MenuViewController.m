@@ -268,11 +268,9 @@
 - (void)showConsolePressed:(id)sender {
 	LogVerbose(@"Menu: show console button pressed");
 	[self.popover dismissPopoverAnimated:YES];
-	ConsoleViewController *consoleView = [[ConsoleViewController alloc] init];
-	UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:consoleView];
-	navigationController.modalPresentationStyle = UIModalPresentationFormSheet;
-	navigationController.modalInPopover = YES;
-	[self.popover.sourceController.navigationController presentViewController:navigationController animated:YES completion:nil];
+        ConsoleViewController *consoleView = [[ConsoleViewController alloc] init];
+        consoleView.modalPresentationStyle = UIModalPresentationOverFullScreen;
+        [self.popover.sourceController.navigationController presentViewController:consoleView animated:YES completion:nil];
 }
 
 - (void)showInfoPressed:(id)sender {
