@@ -13,6 +13,9 @@
 /// modal console log text view, uses Log textViewLogger
 @interface ConsoleViewController : UIViewController
 
+/// container view housing the console, draggable
+@property (strong, nonatomic) UIView *containerView;
+
 /// text view to display current log lines
 @property (strong, nonatomic) UITextView *textView;
 
