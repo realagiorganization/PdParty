@@ -1,0 +1,20 @@
+{
+  "name": "pdparty",
+  "version": "1.0.0",
+  "description": "PdParty =======",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "jsdom": "^26.1.0"
+  }
+}

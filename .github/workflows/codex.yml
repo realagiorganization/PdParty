@@ -1,0 +1,21 @@
+name: DevPlan to Codex
+
+on:
+  push:
+    paths:
+      - devplan.nextsteps.md
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Send DevPlan to Codex
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          content=$(cat devplan.nextsteps.md)
+          curl -s https://api.openai.com/v1/completions \
+            -H "Content-Type: application/json" \
+            -H "Authorization: Bearer $OPENAI_API_KEY" \
+            -d "{\"model\":\"code-davinci-002\",\"prompt\": \"$content\"}"
