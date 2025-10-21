@@ -1,5 +1,5 @@
 # PD Sample Ideas
 
-- sample-based looper
-- bitcrusher with LFO
-- stereo phaser with envelope follower
+- algorithmic breakbeat slicer with probabilistic fills
+- resonant comb pad with slow random detune
+- spectral feedback cloud controlled by accelerometer tilt
