@@ -40,3 +40,9 @@ pod install           # resolves Xcode workspace dependencies
 ## Next Steps
 
 With the clone available and the PdParty submodules initialized, future commits can start populating `ios_app` with project files. Once those exist, rerun the commands above to pull tool dependencies so the app builds cleanly.
+
+## Automation notes
+
+- Cloned `realagiorganization/ios_app` into `/app/workspace/repos/realagiorganization__ios_app` for this run and confirmed no upstream submodules yet.
+- Refreshed PdParty submodules (`libs/pd`, `pure-data`, `opensl_stream`) so shared dependencies are populated locally.
+- macOS-only tooling (Xcode, CocoaPods, Homebrew) cannot be installed in this Linux container; follow the setup steps above on a macOS host.
